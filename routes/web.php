@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('profile/{user:username}/posts/{post:id}/comments/{comment:id}',
+    'HomeController@show')->name('custom-route');
