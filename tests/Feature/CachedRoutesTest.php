@@ -11,7 +11,7 @@ class Test extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_doesnt_return_404_error_when_routes_are_cached()
+    public function it_doesnt_return_needed_404_error_when_routes_are_cached()
     {
         $user = factory(User::class)->create();
 
